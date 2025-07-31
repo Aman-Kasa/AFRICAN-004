@@ -23,9 +23,10 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
-from .views import AuditLogListView, AuditLogCreateView
+from .views import AuditLogListView, AuditLogCreateView, home_view
 
 urlpatterns = [
+    path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('api/inventory/', include('inventory.urls')),
     path('api/orders/', include('orders.urls')),
