@@ -17,7 +17,10 @@ cd backend/backend
 echo "🔄 Running Django migrations..."
 python manage.py migrate --noinput
 
-echo "📂 Collecting static files..."
+echo "� Creating superuser..."
+echo "from users.models import User; User.objects.filter(username='admin').exists() or User.objects.create_superuser('admin', 'a.kasa@alustudent.com', 'admin123', role='ADMIN')" | python manage.py shell
+
+echo "�📂 Collecting static files..."
 python manage.py collectstatic --noinput
 
 echo "✅ Backend build completed!"
