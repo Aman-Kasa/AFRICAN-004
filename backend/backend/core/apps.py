@@ -4,10 +4,9 @@ from django.contrib.auth import get_user_model
 from django.core.management import call_command
 import os
 
-User = get_user_model()
-
 def create_admin_user(sender, **kwargs):
     """Create admin user after migrations"""
+    User = get_user_model()  # Move this inside the function
     try:
         # Create admin user
         user, created = User.objects.get_or_create(
