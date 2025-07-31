@@ -19,20 +19,20 @@ class Command(BaseCommand):
         self.stdout.write('👤 Creating admin user...')
         try:
             user, created = User.objects.get_or_create(
-                username='aman',
+                username='admin',
                 defaults={
-                    'email': 'a.kasa@alustudent.com',
+                    'email': 'admin@example.com',
                     'is_staff': True,
                     'is_superuser': True,
                     'role': 'ADMIN'
                 }
             )
             if created:
-                user.set_password('aman@123')
+                user.set_password('admin123')
                 user.save()
                 self.stdout.write(self.style.SUCCESS('✅ Admin user created successfully'))
             else:
-                user.set_password('aman@123')
+                user.set_password('admin123')
                 user.save()
                 self.stdout.write(self.style.SUCCESS('✅ Admin user updated'))
         except Exception as e:

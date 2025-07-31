@@ -60,7 +60,7 @@ class Command(BaseCommand):
             self.stdout.write(f'   🔔 Notifications: {notifications_count}')
             
             self.stdout.write('\n🎯 Login Credentials:')
-            self.stdout.write('   👤 aman / aman@123 (Admin)')
+            self.stdout.write('   👤 admin / admin123 (Admin)')
             self.stdout.write('   👤 manager1 / Testpass123 (Manager)')
             self.stdout.write('   👤 staff1 / Testpass123 (Staff)')
             
