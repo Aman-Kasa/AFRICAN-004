@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h2 { text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #888; padding: 6px 10px; font-size: 12px; }
+        th { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h2>Suppliers Report</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Contact Name</th>
+                <th>Contact Email</th>
+                <th>Contact Phone</th>
+                <th>Address</th>
+                <th>Created</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for supplier in suppliers %}
+            <tr>
+                <td>{{ supplier.name }}</td>
+                <td>{{ supplier.contact_name }}</td>
+                <td>{{ supplier.contact_email }}</td>
+                <td>{{ supplier.contact_phone }}</td>
+                <td>{{ supplier.address }}</td>
+                <td>{{ supplier.created_at|date:'Y-m-d H:i' }}</td>
+                <td>{{ supplier.updated_at|date:'Y-m-d H:i' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html> 
