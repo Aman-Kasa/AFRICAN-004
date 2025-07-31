@@ -1,0 +1,441 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "aq11zw0vfxmw9bozunknx5sidrxts7dr",
+  "fields": {
+    "session_data": ".eJxVjDsOgzAQRO_iOrLs9cJCyvScwVr_YpLIljBUUe4ekCiSbjTvzbyF5W3NdmtxsXMQV6HF5bdz7J-xHCA8uNyr9LWsy-zkociTNjnVEF-30_07yNzyvjYDJoIE0Lk-EnlQvdqTUR7JodeUxpGIcGBi5EAqQQRNEX1ntEESny_EMDbr:1uh7Kw:wMGyyORad7akcq7MtNKxukrI-V8rQ8c0EaQxRHWfrRc",
+    "expire_date": "2025-08-13T13:59:18.289Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "r5rdhl55na4ivo8a6g587b4hv3cys3gv",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFCISwevfsNZBcWqRpISnsy_rs06UGPM-_NvEXAbS1h67yEOYmLUOL02xHGJ9cdpAfWe5Ox1XWZSe6KPGiXt5b4dT3cv4OCvYw1albOg2HMZvLagTNIYPPEFpQHjTkTR4qWFCBGE-1ENFgeQdHZic8X85849A:1ueA3t:gf0acvlZdbSQJhLMmMrlge8eUwjoji6tzyHmOpRbCZI",
+    "expire_date": "2025-08-05T10:17:29.164Z"
+  }
+},
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$L5tzQFqDnODiWXyYofaCDy$oNqEtYcdyX8MAdCLtqcyWI1PX4NLOt7aMBlguDcHTys=",
+    "last_login": "2025-07-30T13:59:18.286Z",
+    "is_superuser": true,
+    "username": "aman",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-07-21T18:04:29.109Z",
+    "role": "ADMIN",
+    "email": "a.kasa@alustudent.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "Testpass123",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "manager1",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-22T08:54:58.200Z",
+    "role": "MANAGER",
+    "email": "manager1@example.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "password": "Testpass123",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "staff1",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-22T08:54:58.204Z",
+    "role": "STAFF",
+    "email": "staff1@example.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "inventory.inventoryitem",
+  "pk": 1,
+  "fields": {
+    "name": "Industrial Drill",
+    "sku": "DRL-1001",
+    "quantity": 50,
+    "reorder_level": 10,
+    "created_at": "2025-07-22T08:54:58.213Z",
+    "updated_at": "2025-07-22T08:54:58.213Z"
+  }
+},
+{
+  "model": "inventory.inventoryitem",
+  "pk": 2,
+  "fields": {
+    "name": "Safety Gloves",
+    "sku": "GLV-2002",
+    "quantity": 200,
+    "reorder_level": 50,
+    "created_at": "2025-07-22T08:54:58.216Z",
+    "updated_at": "2025-07-22T08:54:58.216Z"
+  }
+},
+{
+  "model": "inventory.inventoryitem",
+  "pk": 3,
+  "fields": {
+    "name": "Welding Helmet",
+    "sku": "HLT-3003",
+    "quantity": 30,
+    "reorder_level": 5,
+    "created_at": "2025-07-22T08:54:58.219Z",
+    "updated_at": "2025-07-22T08:54:58.219Z"
+  }
+},
+{
+  "model": "inventory.inventoryitem",
+  "pk": 4,
+  "fields": {
+    "name": "hammer",
+    "sku": "vtl-10032",
+    "quantity": 45,
+    "reorder_level": 400,
+    "created_at": "2025-07-30T08:46:21.819Z",
+    "updated_at": "2025-07-30T09:12:25.880Z"
+  }
+},
+{
+  "model": "orders.purchaseorder",
+  "pk": 1,
+  "fields": {
+    "supplier": "Acme Supplies",
+    "item": "Industrial Drill (SKU: DRL-1001)",
+    "quantity": 10,
+    "status": "PENDING",
+    "created_at": "2025-07-22T08:54:58.222Z",
+    "updated_at": "2025-07-22T08:54:58.222Z"
+  }
+},
+{
+  "model": "orders.purchaseorder",
+  "pk": 2,
+  "fields": {
+    "supplier": "Global Industrial",
+    "item": "Welding Helmet",
+    "quantity": 100,
+    "status": "APPROVED",
+    "created_at": "2025-07-22T08:54:58.224Z",
+    "updated_at": "2025-07-30T09:19:52.969Z"
+  }
+},
+{
+  "model": "orders.purchaseorder",
+  "pk": 3,
+  "fields": {
+    "supplier": "Global Industrial",
+    "item": "hammer",
+    "quantity": 40,
+    "status": "APPROVED",
+    "created_at": "2025-07-30T09:10:27.964Z",
+    "updated_at": "2025-07-30T09:11:38.214Z"
+  }
+},
+{
+  "model": "suppliers.supplier",
+  "pk": 1,
+  "fields": {
+    "name": "Acme Supplies",
+    "contact_name": "Alice Smith",
+    "contact_email": "alice@acme.com",
+    "contact_phone": "+1234567890",
+    "address": "123 Acme St, City",
+    "created_at": "2025-07-22T08:54:58.207Z",
+    "updated_at": "2025-07-22T08:54:58.207Z"
+  }
+},
+{
+  "model": "suppliers.supplier",
+  "pk": 2,
+  "fields": {
+    "name": "Global Industrial",
+    "contact_name": "Bob Jones",
+    "contact_email": "bob@global.com",
+    "contact_phone": "+1987654321",
+    "address": "456 Global Ave, Metropolis",
+    "created_at": "2025-07-22T08:54:58.210Z",
+    "updated_at": "2025-07-22T08:54:58.210Z"
+  }
+},
+{
+  "model": "suppliers.supplier",
+  "pk": 3,
+  "fields": {
+    "name": "Total",
+    "contact_name": "minte",
+    "contact_email": "mnte@total.org",
+    "contact_phone": "0798698988",
+    "address": "kg 414",
+    "created_at": "2025-07-30T09:21:19.250Z",
+    "updated_at": "2025-07-30T09:21:19.250Z"
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "message": "Welcome to IPMS! Your inventory management system is ready.",
+    "type": "INFO",
+    "is_read": false,
+    "created_at": "2025-07-27T00:01:53.728Z"
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "message": "Low stock alert: Welding Helmet (HLT-3003) is below reorder level.",
+    "type": "WARNING",
+    "is_read": false,
+    "created_at": "2025-07-27T00:01:53.734Z"
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "message": "New order #PO-2024-001 has been approved and is ready for processing.",
+    "type": "INFO",
+    "is_read": false,
+    "created_at": "2025-07-27T00:01:53.736Z"
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "message": "Supplier ABC Industrial has updated their contact information.",
+    "type": "INFO",
+    "is_read": false,
+    "created_at": "2025-07-27T00:01:53.738Z"
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "message": "Critical: Industrial Drill (DRL-1001) stock is critically low!",
+    "type": "ALERT",
+    "is_read": false,
+    "created_at": "2025-07-27T00:01:53.741Z"
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "message": "Monthly inventory report is ready for review.",
+    "type": "INFO",
+    "is_read": false,
+    "created_at": "2025-07-27T00:01:53.743Z"
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 7,
+  "fields": {
+    "user": 1,
+    "message": "New user account created for warehouse manager.",
+    "type": "INFO",
+    "is_read": false,
+    "created_at": "2025-07-27T00:01:53.746Z"
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 8,
+  "fields": {
+    "user": 1,
+    "message": "System maintenance scheduled for tomorrow at 2:00 AM.",
+    "type": "WARNING",
+    "is_read": false,
+    "created_at": "2025-07-27T00:01:53.748Z"
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "message": "Backup completed successfully. All data is secure.",
+    "type": "INFO",
+    "is_read": false,
+    "created_at": "2025-07-27T00:01:53.751Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "action": "CREATE",
+    "object_type": "Inventory Item",
+    "object_id": "HLT-3003",
+    "message": "Created new inventory item: Welding Helmet",
+    "created_at": "2025-07-27T00:07:38.835Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "action": "UPDATE",
+    "object_type": "Inventory Item",
+    "object_id": "GLV-2002",
+    "message": "Updated quantity for Safety Gloves from 150 to 200",
+    "created_at": "2025-07-27T00:07:38.840Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "action": "DELETE",
+    "object_type": "Inventory Item",
+    "object_id": "OLD-9999",
+    "message": "Deleted obsolete inventory item: Old Equipment",
+    "created_at": "2025-07-27T00:07:38.842Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "action": "CREATE",
+    "object_type": "Purchase Order",
+    "object_id": "PO-2024-001",
+    "message": "Created new purchase order for Industrial Drill",
+    "created_at": "2025-07-27T00:07:38.844Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "action": "APPROVE",
+    "object_type": "Purchase Order",
+    "object_id": "PO-2024-001",
+    "message": "Approved purchase order PO-2024-001",
+    "created_at": "2025-07-27T00:07:38.847Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "action": "CREATE",
+    "object_type": "Supplier",
+    "object_id": "SUP-001",
+    "message": "Added new supplier: ABC Industrial Supplies",
+    "created_at": "2025-07-27T00:07:38.849Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 7,
+  "fields": {
+    "user": 1,
+    "action": "UPDATE",
+    "object_type": "Supplier",
+    "object_id": "SUP-001",
+    "message": "Updated contact information for ABC Industrial Supplies",
+    "created_at": "2025-07-27T00:07:38.851Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 8,
+  "fields": {
+    "user": 1,
+    "action": "LOGIN",
+    "object_type": "User Session",
+    "object_id": "aman",
+    "message": "User aman logged in successfully",
+    "created_at": "2025-07-27T00:07:38.854Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "action": "EXPORT",
+    "object_type": "Report",
+    "object_id": "INV-REP-2024",
+    "message": "Exported inventory report as PDF",
+    "created_at": "2025-07-27T00:07:38.856Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 10,
+  "fields": {
+    "user": 1,
+    "action": "IMPORT",
+    "object_type": "Inventory",
+    "object_id": "BULK-001",
+    "message": "Imported bulk inventory data from CSV file",
+    "created_at": "2025-07-27T00:07:38.858Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "action": "BACKUP",
+    "object_type": "System",
+    "object_id": "DB-2024-01",
+    "message": "Database backup completed successfully",
+    "created_at": "2025-07-27T00:07:38.861Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 12,
+  "fields": {
+    "user": 1,
+    "action": "MAINTENANCE",
+    "object_type": "System",
+    "object_id": "SYS-001",
+    "message": "Scheduled system maintenance initiated",
+    "created_at": "2025-07-27T00:07:38.863Z"
+  }
+}
+]
