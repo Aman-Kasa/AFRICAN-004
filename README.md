@@ -1,5 +1,5 @@
 # Inventory and Procurement Management System
-![IPMS](https://www.istockphoto.com/photos/inventory-management-system)
+![IPMS](https://blog.lio.io/wp-content/uploads/2023/05/Procurement-and-Inventory-Management.jpg)
 ## Overview
 A robust, scalable web application designed to empower African industries and SMEs with modern inventory, procurement, and supply chain management. Built with Django (backend) and React (frontend), it features real-time tracking, role-based access, analytics, notifications, and professional UI/UX.
 
