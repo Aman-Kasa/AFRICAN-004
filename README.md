@@ -1,3 +1,4 @@
+![IPMS](https://lsiwins.com/best-practices-for-procurement-and-inventory-management/)
 # Inventory and Procurement Management System
 
 ## Overview
