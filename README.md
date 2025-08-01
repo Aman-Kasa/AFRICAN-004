@@ -28,8 +28,8 @@ A robust, scalable web application designed to empower African industries and SM
 - npm
 
 ## LOG IN
-   username = admin
-   pass = admin123
+   (username = admin),
+   (pass = admin123)
 
 ### Backend Setup
 ```bash
