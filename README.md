@@ -27,6 +27,10 @@ A robust, scalable web application designed to empower African industries and SM
 - Node.js 18+
 - npm
 
+## LOG IN
+   username = admin
+   pass = admin123
+
 ### Backend Setup
 ```bash
 cd backend/backend
